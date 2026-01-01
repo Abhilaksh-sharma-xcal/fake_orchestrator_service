@@ -1,5 +1,5 @@
 from ray import serve
-from hello_service.deployment import HelloService
+from service_1.deployment import HelloService
 
 app = serve.Application(
     HelloService.bind()
