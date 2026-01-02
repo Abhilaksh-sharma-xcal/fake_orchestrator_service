@@ -1,4 +1,4 @@
 from ray import serve
-from service_1.deployment import HelloService
+from service_1.deployment import HelloService_0
 
-app = HelloService.bind()
+app = HelloService_0.bind()
