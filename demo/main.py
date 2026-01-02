@@ -8,7 +8,6 @@ class Binder:
         self.service1 = service1_handle
 
     async def __call__(self, request):
-        # Example: call one of the services dynamically
         result0 = await self.service0.remote(request)
         result1 = await self.service1.remote(request)
         return {"service0": result0, "service1": result1}
